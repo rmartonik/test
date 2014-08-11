@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	 <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	  <script src="http://code.jquery.com/jquery.js"></script>
+
+	  	 <script type="text/javascript">
+		$(document).ready(function() {
+			$(window).resize(function() {
+				if($(window).width() < 600) {
+					$('a.name').find('span').css('display', 'none');
+					if ($(window).width() < 320) {
+						$('ul.currency').find('li.currency').css('display', 'none');
+					}
+				}
+				else {
+					$('a.name').find('span').css('display', 'block');
+					$('ul.currency').find('li.currency').css('display', 'block');
+				}
+			});
+		});
+		</script>
+	  
+	  	 <style type="text/css">
+		.navbar-default {
+			background-color: #553d7c;
+			background-image: none;
+			height: 50px;
+		}
+		
+		
+		a.navbar-brand {
+			color: #ffffff;
+			font-size: 18px;
+			display: block;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			height: 22px;
+			background: url('images/brand_bg.png') 0px 0px no-repeat;
+			margin-top: 12px;
+			padding-left: 42px;
+			cursor: pointer;
+			line-height: 22px;
+			width: 150px;
+		}
+		
+		.navbar .container {
+			background-color: #553d7c; /* background color will be black for all browsers */
+			background-image: none;
+			background-repeat: no-repeat;
+			border: none;
+			filter: none;
+			max-width: 1140px;
+			margin: 0 auto;
+			box-shadow: 0;
+			height: 50px;
+			
+		}
+		
+		a.name {
+			float: right;
+			background: url('images/name_bg.png') center right no-repeat;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			color: #cdbfd2;
+			height: 24px;
+			margin: -20px 20px 0px 0px;
+			padding: 0px 35px 0px 0px;
+			display: block;
+			cursor: pointer;
+		}
+		
+		.navbar-static-top .navbar-inner {
+			box-shadow: 0;
+		}
+		
+		ul.currency {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			color: #cdbfd2;
+		}
+		
+		ul.currency a.dropdown-toggle{
+			border: 1px solid #735c9a;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			display: block;
+			font-family: 'Open Sans', sans-serif;
+			
+		}
+		
+		ul.currency li.currency {
+			padding: 0px 20px 0px 0px;
+		}
+		
+		ul.currency li a.dropdown-toggle {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			color: #fff;
+			margin-top: -10px;
+		}
+			
+		a.dropdown-toggle:focus {
+			color: #fff;
+		}
+	</style>
+	 
+
+	 
+</head>
+<body> 
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<a class="navbar-brand">Test Excercise</a>
+			<div style="float: right; margin-top: -20px; padding: 0px 10px 0px 10px;">
+				<ul class="nav navbar-nav currency">
+					<li class="currency">Currency:</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">USD</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>USD</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<a class="name">
+				<span>Welcome Mr Dziwne Imie</span>
+			</a>
+			
+			
+			
+		</div>
+	</div>
+   
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
